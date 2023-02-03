@@ -1,0 +1,90 @@
+
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Caption Generator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="font-family:var(--bs-body-font-family);">
+<div class="container overflow-hidden">
+  <div class="row gy-5">
+    <table>
+        <tr>
+            <th>
+    <div style="margin-left:0%;border:2px solid white; border-radius:20px 20px 20px 20px;width:1272px;height:57.6px;box-shadow:5px 5px rgba(0,0,0,0.5);;opacity:0.7;"><b style="float:left;color:#080C31;">Caption Generator</b></div>
+ </div><br><br><br>
+ <div class="row gy-5">
+ <div style="text-align:left;margin-left:5%;">
+ <br>
+ <h3 style="background-image: linear-gradient(310deg, #2152FF, #21D4FD);-webkit-background-clip:text;-webkit-text-fill-color: transparent;position: relative;z-index: 1;font-weight: 700 !important;  color: #17c1e8 !important;font-size: 1.875rem;
+ line-height: 1.375;">
+ Know what your image is trying to speak</h3>
+ <form action="{{url_for('after')}}" method='POST' enctype='multipart/form-data'>
+ <h4>Upload a image:</h4><label><b>JPG,PNG is recommended</b></label><br><div style="margin-bottom: 1rem !important;"><input type="file" style="cursor: pointer;overflow: hidden;border-radius: 0.5rem;
+border-top-right-radius: 0.5rem !important;
+border-bottom-right-radius: 0.5rem !important;
+border-left-width: 1px;display: block;
+padding: 0.5rem 0.75rem;
+font-size: 0.875rem;
+font-weight: 400;
+line-height: 1.4rem;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #d2d6da;
+  border-left-width: 1px;
+appearance: none;
+border-radius: 0.5rem;
+transition: box-shadow 0.15s ease, border-color 0.15s ease;margin: 0;
+font-family: inherit;" aria-label="Email" aria-describedby="email-addon" name='file1'/></div>
+ <button type="submit" style="color:white;border: 0;cursor: pointer;background-image: linear-gradient(310deg, #2152ff 0%, #21d4fd 100%);letter-spacing: -0.025rem;
+ text-transform: uppercase;
+ box-shadow: 0 4px 7px -1px rgba(0, 0, 0, 0.11), 0 2px 4px -1px rgba(0, 0, 0, 0.07);
+ background-size: 150%;
+ width:340px;
+ height:60.8px;
+ background-position-x: 25%;margin-bottom: 0 !important;margin-top: 1.5rem !important;--bs-btn-padding-x: 1.5rem;
+--bs-btn-padding-y: 0.75rem;
+--bs-btn-font-family: ;
+--bs-btn-font-size: 0.75rem;
+--bs-btn-font-weight: 700;
+--bs-btn-line-height: 1.4;
+--bs-btn-color: #67748e;
+--bs-btn-bg: transparent;
+--bs-btn-border-width: 1px;
+--bs-btn-border-color: transparent;
+--bs-btn-border-radius: 0.5rem;
+--bs-btn-box-shadow: 0 4px 7px -1px rgba(0, 0, 0, 0.11), 0 2px 4px -1px rgba(0, 0, 0, 0.07);
+--bs-btn-disabled-opacity: 0.65;
+--bs-btn-focus-box-shadow: 0 0 0 0.2rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+display: inline-block;
+padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+font-family: var(--bs-btn-font-family);
+font-size: var(--bs-btn-font-size);
+font-weight: var(--bs-btn-font-weight);
+line-height: var(--bs-btn-line-height);
+color: var(--bs-btn-color);
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+user-select: none;
+border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+border-radius: var(--bs-btn-border-radius);
+background-color: var(--bs-btn-bg);
+transition: all 0.15s ease-in;-webkit-appearance: button;" name="btn"><h4 style="color:white;">Generate Caption</h4></button></form><br>
+    <th><br>
+	<img src="{{url_for('static', filename='texture.png')}}" align="middle" style="height:550px;width:100%"/>
+    <!--<img src="texture.png" style="height:550px;width:100%"></th>-->
+    </tr></table>
+ </div>
+ <div class="row gx-5">
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer style="margin-left:45%;color:#6c757d">Copyright@2023 Group B7</footer>
+</body>
+{%endblock%}
