@@ -3,7 +3,7 @@ import cv2
 from keras.models import load_model
 import numpy as np
 from keras.applications.resnet import ResNet50
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 from keras.layers import Dense, Flatten,Input, Convolution2D, Dropout, LSTM, TimeDistributed, Embedding, Bidirectional, Activation, RepeatVector,Concatenate
 from keras.models import Sequential, Model
 from keras.utils import np_utils
