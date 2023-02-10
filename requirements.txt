@@ -38,5 +38,4 @@ tensorflow-io-gcs-filesystem==0.22.0
 termcolor==1.1.0
 threadpoolctl==3.0.0
 tqdm==4.62.3
-tqdm==4.64.1
 Werkzeug==2.2.2
